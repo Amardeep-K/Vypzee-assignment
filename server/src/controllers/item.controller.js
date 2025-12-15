@@ -30,14 +30,14 @@
     const{id} = req.params;
     const  { completed }=req.body;
     const item = await ShopingList.findById(id);
-    console.log(completed);
+    
     
     if(!item){
         throw new CustomError(404,"Item not Found")
     }
     item.completed=completed;
     const updatedItem=await item.save();
-    console.log(updatedItem);
+    
     
     return  res.status(200).json(new ApiResponse(200,"List updated successfully",updatedItem));
  }
