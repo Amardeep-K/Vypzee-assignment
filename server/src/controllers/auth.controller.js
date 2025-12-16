@@ -6,7 +6,9 @@ import { User } from '../models/user.model.js';
 
 const cookieOptions = {
   httpOnly: true,
-  secure: true,
+  secure: true,        // REQUIRED in prod
+  sameSite: "none",    // REQUIRED for cross-site
+  maxAge: 7 * 24 * 60 * 60 * 1000
 };
 
 export const registerUser = async (req, res) => {
