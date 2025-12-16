@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router'
 const ShoppingItems = () => {
     const navigate = useNavigate();
     const navigateToCreate=()=>{
-        navigate("/create");
+        navigate("/add");
     }
   return (
     <>
