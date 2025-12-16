@@ -14,7 +14,7 @@ app.use(cors({
     origin: process.env.CLIENT_URL ,
     credentials: true, 
   }))
-  app.options("*", cors());
+  app.options("/*", cors());
 
 app.get("/",(req,res)=>{
   res.send("Server is running")
