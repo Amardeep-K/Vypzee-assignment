@@ -16,6 +16,9 @@ app.use(cors({
   }))
   app.options("*", cors());
 
+app.get("/",(req,res)=>{
+  res.send("Server is running")
+})
 app.use("/api",itemRouter);
 app.use("/api/auth",authRouter)
 
