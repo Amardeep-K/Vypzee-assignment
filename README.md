@@ -1,4 +1,6 @@
 # 🛒 Trackit — Full Stack Shopping Tracker
+## Live Url
+https://vypzee-assignment.vercel.app/
 
 Trackit is a full-stack shopping list  with user authentication.
 Built using React, Node.js, Express, MongoDB Atlas, JWT, and Tailwind CSS.
